@@ -1,0 +1,1 @@
+select upper(`last_name`) as 'NAME', `first_name`, `price` from member inner join user_card on member.id_member = user_card.id_user inner join subscription on subscription.id_sub = member.id_sub where `price` > 42 order by `last_name`, `first_name` ASC;

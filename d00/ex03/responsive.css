@@ -1,0 +1,41 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #364167;
+	background-image:url(https://anniversaire-celebrite.com/upload/250x333/dmitri-mendeleiev-250.jpg);
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+table {
+	width: 100%;
+	height: 100%;
+}
+
+.elem {
+	border: 3px solid grey;
+	background: linear-gradient(to right, #ffc125, #ff7373);
+	text-align: center;
+	font-size: 100%;
+}
+
+.ne {
+	display: block;
+	text-align: left;
+	font-size: 60%;
+}
+
+.pa {
+	display: block;
+	text-align: right;
+	font-size: 60%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			#myId {
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="myId" onclick="add()"></div>
+		<script>
+			size = 200;
+			elem = document.getElementById("myId");
+			elem.style.background = "red";
+			elem.addEventListener("mouseleave", mleave);
+			function add()
+			{
+				size += 10;
+				elem.style.width = size + "px";
+				elem.style.height = size + "px";
+				if (size == 420)
+					size = 200;
+				if (elem.style.background == "red")
+					elem.style.background = "green";
+				else if (elem.style.background == "green")
+					elem.style.background = "blue";
+				else if (elem.style.background == "blue")
+					elem.style.background = "red";
+			}
+			function mleave()
+			{
+				if (size > 200)
+				{
+					size -= 5;
+					elem.style.width = size + "px";
+					elem.style.height = size + "px";
+				}
+				if (elem.style.background == "red")
+					elem.style.background = "blue";
+				else if (elem.style.background == "blue")
+					elem.style.background = "green";
+				else if (elem.style.background == "green")
+					elem.style.background = "red";
+			}
+		</script>
+	</body>
+</html>

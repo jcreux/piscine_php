@@ -1,0 +1,137 @@
+body {
+	background-color: #505050;
+}
+
+.heading {
+	background-color: #909090;
+	width: 1300px;
+	height: 120px;
+	padding: 10px;
+	margin-left: 250px;
+	border-radius: 10px;
+}
+
+.loupe {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 650px;
+}
+
+.reload {
+	position: absolute;
+	margin-left: 880px;
+}
+
+.close {
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 880px;
+}
+
+.left {
+	position: absolute;
+	background-color: #909090;
+	margin-top: 20px;
+	margin-left: 290px;
+	padding: 10px;
+	width: 130px;
+	height: 370px;
+	border-radius: 10px;
+}
+
+.img-left {
+	margin-left: 30px;
+}
+
+.img-left-2 {
+	margin-left: 30px;
+	border: 5px solid red;
+	border-radius: 5px;
+}
+
+.main {
+	position: relative;
+	background-color: #909090;
+	margin-top: 20px;
+	padding: 10px;
+	width: 900px;
+	height: 505px;
+	margin-left: 455px;
+	display: block;
+	border-radius: 10px;
+}
+
+.right {
+	position: absolute;
+	background-color: #909090;
+	margin-top: -524px;
+	margin-left: 1390px;
+	padding: 10px;
+	width: 130px;
+	height: 370px;
+	border-radius: 10px;
+}
+
+.img-right {
+	margin-left: 20px;
+}
+
+.bottom {
+	position: absolute;
+	background-color: #88FF89;
+	margin-top: -70px;
+	margin-left: 200px;
+	padding: 10px;
+	width: 500px;
+	height: 150px;
+	border-radius: 10px;
+	font-family: Verdana;
+}
+
+#cpt {
+	text-shadow:6px 6px 5.5px red;
+}
+
+#enter {
+	font-size: 180%;
+}
+
+p {
+	margin: 0px;
+}
+
+.heading, .left, .main, .right, .bottom {
+	box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.main {
+	position: relative;
+}
+
+.ikea {
+	position: absolute;
+    display: block;
+    height: 200px;
+    width: 129px;
+    margin-top: 290px;
+    margin-left: 290px;
+}
+
+.apple {
+    height: 140px;
+    width: 200px;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 700px;
+}
+
+.brick {
+	background: repeat url('resources/brick.jpg');
+	width: 130px;
+	height: 70px;
+}
+
+#input-text {
+	border-top: 2px inset lightgrey;
+	border-left: 2px inset lightgrey;
+}

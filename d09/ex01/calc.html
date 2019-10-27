@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	</head>
+	<body>
+		<input id="in1" name="in1" type="text" />
+		<select id="sl" name="select">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			<option>%</option>
+		</select>
+		<input id="in2" name="in2" type="text" />
+		<input type="submit" value="Try me!" onclick="myFunc()" />
+		<script>
+			setInterval("alert('Please, use me...')", 30000);
+			function myFunc() {
+				elem1 = document.getElementById("in1").value;
+				op = document.getElementById("sl").value;
+				elem2 = document.getElementById("in2").value;
+				if (elem1 >= 0 && elem2 >= 0)
+				{
+					if ((op == '/' || op == '%') && elem2 == 0)
+					{
+						alert("It’s over 9000!");
+						console.log("It’s over 9000!");
+						return ;
+					}
+					if (op == '+')
+					{
+						alert(parseInt(elem1) + parseInt(elem2));
+						console.log(parseInt(elem1) + parseInt(elem2));
+					}
+					if (op == '-')
+					{
+						alert(elem1 - elem2);
+						console.log(elem1 - elem2);
+					}
+					if (op == '*')
+					{
+						alert(elem1 * elem2);
+						console.log(elem1 * elem2);
+					}
+					if (op == '/')
+					{
+						alert(elem1 / elem2);
+						console.log(elem1 / elem2);
+					}
+					if (op == '%')
+					{
+						alert(elem1 % elem2);
+						console.log(elem1 % elem2);
+					}
+				}
+				else
+				{
+					alert("Error :(");
+					return ;
+				}
+			}
+		</script>
+	</body>
+</html>
